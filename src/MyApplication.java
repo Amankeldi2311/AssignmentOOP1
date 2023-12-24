@@ -1,5 +1,4 @@
-import models.Point;
-import models.Shape;
+import models.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +6,7 @@ import java.util.Scanner;
 
 public class MyApplication {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("/Users/a.khaimuldin/IdeaProjects/assignment1se2313/src/source");
+        File file = new File("C:\\Users\\Zhandos\\Desktop\\OOP\\AssignmentOOP1\\src\\source");
 
         Scanner sc = new Scanner(file);
         Shape shape = new Shape();
@@ -20,7 +19,8 @@ public class MyApplication {
             shape.addPoint(point);
         }
 
-        System.out.println(shape.calculatePerimeter());
-        System.out.println(shape.getLongest());
+        System.out.println(shape.getPerimeter());
+        System.out.println(shape.getLongestSide());
+        System.out.println(shape.getAverageSide());
     }
 }
